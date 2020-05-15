@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Tutorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        body {
+            margin: 2px 2px 2px 2px;
+            padding: 2px 2px 2px 2px;
+            color: black;
+        }
+
+        p {
+            font-weight: bold;
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 12px 12px 12px 12px;
+            margin-top: 5px;
+            text-shadow: 20px black;
+            border-radius: 20px;
+            float: none;
+            padding: 1px 1px 1px 4px;
+        }
+
+        table td {
+            overflow-x: hidden;
+            overflow-y: hidden;
+            border-spacing: 3px;
+        }
+
+        td {
+            padding: 30px;
+            margin: 1%;
+        }
+
+        img {
+            padding: 2px 2px 2px 2px;
+            border-radius: 20px;
+        }
+
+        .span1 {
+            color: grey;
+        }
+
+        .span2 {
+            color: lightgreen;
+        }
+
+        h2 {
+            margin: 3px 3px 3px 3px;
+        }
+
+        .next {
+            margin: 5px 5px 5px 5px;
+            float: right;
+            font-weight: bold;
+            font-size: 25px;
+            color: lightgreen;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .Previous {
+            margin: 5px 5px 5px 5px;
+            float: Left;
+            font-weight: bold;
+            font-size: 25px;
+            color: lightgreen;
+        }
+
+        p {
+            font-size: 18px;
+            z-index: 4;
+            margin: 12px 12px 12px 12px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            margin-left: 20px;
+            font-size: 20px;
+        }
+
+        a:active:hover {
+            color: greenyellow;
+        }
+
+        div {
+            font-size: 20px;
+            margin: 25px 25px 25px 25px;
+        }
+
+        h5 {
+            margin: 30px 30px 30px 30px;
+        }
+
+        button {
+            background: #fff;
+            color: #ff0000;
+            text-decoration: none;
+            width: 240px;
+            height: 80px;
+            border: 1px solid red;
+            font-size: 18px;
+            border-radius: 10px;
+            pointer-events: all;
+        }
+
+        button:hover {
+            background: red;
+            color: white;
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: bold;
+            font-size: 19px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/CSSMargins.css">
+    <link rel="icon" href="Image/html.jpg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <h2 class="display-4"><span class="span1">C</span><span class="span1">o</span><span
+                    class="span1">m</span><span class="span1">p</span><span class="span1">u</span><span
+                    class="span1">t</span><span class="span1">e</span><span class="span1">r</span><span
+                    class="span2">.</span><span class="span2">G</span><span class="span2">r</span><span
+                    class="span2">u</span>
+            </h2>
+        </center>
+        <br><br>
+        <br>
+        <br>
+        <h2>CSS Margin</h2>
+        <br>
+        <a href="CSSBorders.html" class="Previous">Previous >></a>
+        <a href="CSSMargins.html" class="next">Next >></a>
+        <br>
+        <hr>
+        <h1>CSS Margin Properties</h1>
+        <p>The CSS margin properties are used to generate space around elements.</p>
+        <p></p>
+        <p>The margin properties set the size of the white space OUTSIDE the border.</p>
+        <p>This element has a margin of 80px.</p>
+        <hr>
+        <h1>CSS Margin</h1>
+        <p>The CSS margin properties set the size of the white space OUTSIDE the border.</p>
+        <p>With CSS, you have full control over the margins. There are CSS properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
+        <hr>
+        <h1>Margin - Individual Sides</h1>
+        <p>CSS has properties for specifying the margin for each side of an element:</p>
+        <ul>
+            <li>margin-top</li>
+            <li>margin-right</li>
+            <li>margin-bottom</li>
+            <li>margin-left</li>
+        </ul>
+        <p>All the margin properties can have the following values:</p>
+        <ul>
+            <li>auto - the browser calculates the margin</li>
+            <li>length - specifies a margin in px, pt, cm, etc.</li>
+            <li></li>
+        </ul>
+</body>
+
+</html>

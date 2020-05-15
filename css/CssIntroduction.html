@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CCS Tutorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 2px 2px 2px 2px;
+            padding: 2px 2px 2px 2px;
+            color: black;
+        }
+
+        p {
+            font-weight: bold;
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 12px 12px 12px 12px;
+            margin-top: 5px;
+            text-shadow: 20px black;
+            border-radius: 20px;
+            float: none;
+            padding: 1px 1px 1px 4px;
+        }
+
+        table td {
+            overflow-x: hidden;
+            overflow-y: hidden;
+            border-spacing: 3px;
+        }
+
+        td {
+            padding: 30px;
+            margin: 1%;
+        }
+
+        img {
+            padding: 2px 2px 2px 2px;
+            border-radius: 20px;
+        }
+
+        .span1 {
+            color: grey;
+        }
+
+        .span2 {
+            color: lightgreen;
+        }
+
+        h2 {
+            margin: 3px 3px 3px 3px;
+        }
+
+        .next {
+            margin: 5px 5px 5px 5px;
+            float: right;
+            font-weight: bold;
+            font-size: 25px;
+            color: lightgreen;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .Previous {
+            margin: 5px 5px 5px 5px;
+            float: Left;
+            font-weight: bold;
+            font-size: 25px;
+            color: lightgreen;
+        }
+
+        p {
+            font-size: 18px;
+            z-index: 4;
+            margin: 12px 12px 12px 12px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            margin-left: 20px;
+            font-size: 20px;
+        }
+
+        a:active:hover {
+            color: greenyellow;
+        }
+
+        div {
+            font-size: 20px;
+            margin: 25px 25px 25px 25px;
+        }
+
+        h5 {
+            margin: 30px 30px 30px 30px;
+        }
+
+        button {
+            background: #fff;
+            color: #ff0000;
+            text-decoration: none;
+            width: 240px;
+            height: 80px;
+            border: 1px solid red;
+            font-size: 18px;
+            border-radius: 10px;
+            pointer-events: all;
+        }
+
+        button:hover {
+            background: red;
+            color: white;
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: bold;
+            font-size: 19px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/HtmlHompage.css">
+    <link rel="icon" href="Image/css.jpg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <h1 class="display-3"><span class="span1">C</span><span class="span1">o</span><span
+                    class="span1">m</span><span class="span1">p</span><span class="span1">u</span><span
+                    class="span1">t</span><span class="span1">e</span><span class="span1">r</span><span
+                    class="span2">.</span><span class="span2">G</span><span class="span2">r</span><span
+                    class="span2">u</span>
+            </h1>
+        </center>
+        <br><br>
+        <br>
+        <br>
+        <h2>CSS Introduction</h2>
+        <br>
+        <a href="Css3Hompage.html" class="Previous">Previous >></a>
+        <a href="CSSSyntaxandSelectors.html" class="next">Next >></a>
+        <br>
+        <hr>
+        <h1>What is CSS?</h1>
+        <ul>
+            <li>CSS stands for Cascading Style Sheets</li>
+            <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+            <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+            <li>External stylesheets are stored in CSS files</li>
+        </ul>
+        <hr>
+        <h1>Why Use CSS?</h1>
+        <p>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes. </p>
+        <hr>
+        <h1>CSS Solved a Big Problem</h1>
+        <p>HTML was NEVER intended to contain tags for formatting a web page!</p>
+            <p>HTML was created to describe the content of a web page, like:</p>
+            <p>&lt;h1>This is a Heading&lt;/h1></p>
+            <p>&lt;p>This is a paragraph.&lt;/p></p>
+            <p>When tags like <font>, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.</p>
+                <p>To solve this problem, the World Wide Web Consortium (W3C) created CSS.</p>
+                <p>CSS removed the style formatting from the HTML page!</p>
+                <hr>
+                <h1>CSS Saves a Lot of Work!</h1>
+                <p>The style definitions are normally saved in external .css files.</p>
+                   <p>With an external stylesheet file, you can change the look of an entire website by changing just one file!</p>
+                   <hr>
+                   <br>
+                   <br>
+                   <a href="Css3Hompage.html" class="Previous"><<</a>
+                   <a href="CSSSyntaxandSelectors.html" class="next ">>></a>
+</div>
+</body>
+
+</html>

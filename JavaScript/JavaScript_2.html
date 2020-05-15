@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Coding Thunder</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700;1,900&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="/css/clean-blog.min.css" rel="stylesheet">
+  <style>
+    html{
+    scroll-behavior: smooth;
+    }
+    section{
+    margin-top:10px;
+    }
+    *,h1,h6,h5{
+    font-family: 'Merriweather', serif;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url(' https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Coding Thunder</h1>
+            <span class="subheading">This Website Is Created by Abhishek Kumar</span>
+               <center>
+                   <h2 class="jumbotron-heading text-white"><span id="typed"></span></h2>
+                </center><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<br>
+<div class="container">
+    <center><h1>Learning Metarial</h1></center>
+    </div>
+<div class="container">
+    <h1>JavaScript Display Possibilities</h1>
+    <p>We Can Display JavaScript can "display" data in different ways:</p>
+    <ul>
+        <li>We Can Diplay Output in JavaScript By using innerHTML.</li>
+        <li>We Can Diplay Output in JavaScript By using document.write().</li>
+        <li>We Can Diplay Output in JavaScript By using window.alert().</li>
+        <li>We Can Diplay Output in JavaScript By using console.log()</li>
+    </ul>
+    <h1>Display Output By Using innerHTML JavaScript</h1>
+    <p>Using innerHTML
+To access an HTML element, JavaScript can use the document.getElementById(id) method.
+
+The id attribute defines the HTML element. The innerHTML property defines the HTML content:</p>
+    <h1>Using document.write()</h1>
+<p>It Is Used To Display Text By Using document.write().But When we use this it will remove the exting Content</p>
+    <h1>Using window.alert()</h1>
+    <p>It Used when we have to show a alert</p>
+    <h1>Using console.log()</h1>
+<p>For debugging purposes,We Can Use console.log() to display data.
+</p>
+</div>
+ <!-- Footer -->
+ <footer>
+  <br><br>
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <ul class="list-inline text-center">
+        <li class="list-inline-item">
+          <a href="#">
+            <span class="fa-stack fa-lg">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+      </ul>
+      <p class="copyright text-muted">Copyright &copy; Coding Thunder 2020</p>
+    </div>
+  </div>
+</div>
+<br>
+<div class="container text-center">
+  <a href="#Abhishek" class="btn px-5 rounded-pill shadow-sm backtotop" onclick="topFunction()" id="myBtn"
+    style="background-color: #16c9f6; color: white;" title="Back To Top">Back to
+    Top</a>
+</div>
+</footer>
+<!-- Bootstrap core JavaScript -->
+<script src="/vendor/jquery/jquery.min.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/clean-blog.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+
+</body>
+
+<script>
+mybutton = document.getElementById("myBtn");
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+mybutton.style.display = "inline";
+} else {
+mybutton.style.display = "none";
+}
+}
+
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+
+window.onload = function () {
+console.log("loaded")
+var typed = new Typed('#typed', {
+strings: ["Hello I Am Abhishek Kumar", "Welcome to Computer King", "Learn To Make Awesome Websites", "Learn Web development", "Learn To Make Responsive Websites", "Learn Python Web Development", "and other awesome Web Development concepts with Abhishek Kumar :)"],
+backSpeed: 15,
+smartBackspace: true,
+backDelay: 1200,
+startDelay: 1000,
+typeSpeed: 25,
+loop: true,
+});
+};
+</script>
+
+</html>
