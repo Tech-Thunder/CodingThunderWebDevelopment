@@ -21,8 +21,9 @@
   <!-- Custom styles for this template -->
   <link href="css/clean-blog.min.css" rel="stylesheet">
   <style>
-    html{
-    scroll-behavior: smooth;
+    *{
+      margin: 0;
+      padding: 0;
     }
     /* Center the loader */
 #loader {
@@ -75,6 +76,9 @@
   display: none;
   text-align: center;
 }
+    html{
+    scroll-behavior: smooth;
+    }
     section{
     margin-top:10px;
     }
@@ -85,7 +89,8 @@
 </head>
 
 <body onload="myFunction()">
-    <div id="loader"></div>
+  <body onload="myFunction()" style="margin:0;">
+     <div id="loader"></div>
     
     <div style="display:none;" id="myDiv" class="animate-bottom">
   <!-- Navigation -->
@@ -297,12 +302,11 @@
 <script src="https://kit.fontawesome.com/433888fe69.js" crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
-                                                                                </div>
+</div>
 </body>
 
 <script>
-                                                                                
-    
+
   var myVar;
 
   function myFunction() {
