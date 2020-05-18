@@ -42,6 +42,78 @@
     h5 {
       font-family: 'Merriweather', serif;
     }
+    .counter-box {
+      background: url('//4.bp.blogspot.com/-Tev2WNGyFs8/WaUuh31ZVRI/AAAAAAAADuY/5D9_uZ3rgrY9cVKC46DXxPMlXlxCOmB4gCK4BGAYYCw/s1600/sg-back.jpg') no-repeat;
+      background-attachment: scroll;
+      background-size: cover;
+      background-position: 50% 0;
+      overflow: hidden;
+      margin: 0 auto;
+      padding: 40px 0;
+      position: relative;
+    }
+
+    .counter-box:before {
+      background: rgba(0, 0, 0, 0.7);
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+    }
+
+    .counter-box-wrap {
+      margin: 0 auto;
+    }
+
+    .counter-box-item {
+      width: 25%;
+      float: left;
+      padding: 10px;
+      box-sizing: border-box;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+
+    .counter-box-item i {
+      font-size: 24px;
+    }
+
+    .counter-sora {
+      color: #fff;
+      font-size: 48px;
+      line-height: 48px;
+      font-weight: 700;
+      margin: 10px 0;
+      -webkit-transition: all 300ms linear;
+      -moz-transition: all 300ms linear;
+      -o-transition: all 300ms linear;
+      transition: all 300ms linear;
+    }
+
+    .counter-sora-text {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #fff;
+    }
+
+    .special-tiles,
+    .works-tiles,
+    .about-tiles,
+    .counter-box-item {
+      width: 100%;
+    }
+
+    .counter-box-item,
+    .works-tiles {
+      width: 50%;
+    }
+
   </style>
 </head>
 
@@ -204,8 +276,21 @@
 
     </div>
 
-
-
+  <br>
+  <div class='container-fluid counter-box wow slideInUp'>
+          <div class='row counter-box-wrap'>
+            <div class='counter-box-item'>
+              <i class='color lnr lnr-code'></i>
+              <h1 class='counter-sora'>1</h1>
+              <div class='counter-sora-text'>Projects Completed</div>
+            </div>
+            <div class='counter-box-item'>
+              <i class='color lnr lnr-coffee-cup'></i>
+              <h1 class='counter-sora'>50</h1>
+              <div class='counter-sora-text'>Happy Customers</div>
+            </div>
+          </div>
+        </div>
     <br>
     <hr>
     <!-- Footer -->
