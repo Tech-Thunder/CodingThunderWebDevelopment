@@ -22,6 +22,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700;1,900&family=Open+Sans+Condensed:wght@300&display=swap"
     rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <style>
     * {
       margin: 0;
@@ -124,7 +125,7 @@
     <div class="container">
       <a class="navbar-brand" href="/">Coding Thunder</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        data-target="#navbarResponsive" data-toggle="tooltip" data-placement="top" title="CodingThunder" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -132,16 +133,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="index.html" data-toggle="tooltip" data-placement="top" title="Home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="about.html" data-toggle="tooltip" data-placement="top" title="About">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Services.html">Services</a>
+            <a class="nav-link" href="Services.html" data-toggle="tooltip" data-placement="top" title="Services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="contact.html" data-toggle="tooltip" data-placement="top" title="Contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -189,7 +190,7 @@
             Launched On 2014. It Was Created By Tim Berners-Lee</h6>
           <hr>
           <a href="templates/html/Html.html" class="btn btn-primary"
-            style="outline: none; text-decoration: none;font-family: 'Merriweather', serif;">Start Learning
+            style="outline: none; text-decoration: none;font-family: 'Merriweather', serif;" data-toggle="tooltip" data-placement="top" title="Learn Hyper Text Markup Language">Start Learning
             Html</a>
         </div>
         <div class="extra-div col-lg-4 col-md-4 col-12">
@@ -203,7 +204,7 @@
             Launched On 1999. It Was Created By Hakon</h6>
           <hr>
           <a href="templates/Css/Css3Hompage.html" class="btn btn-primary"
-            style="outline: none; text-decoration: none;font-family: 'Merriweather', serif;">Start Learning
+            style="outline: none; text-decoration: none;font-family: 'Merriweather', serif;" data-toggle="tooltip" data-placement="top" title="Cascading Style Sheet">Start Learning
             Css</a>
         </div>
         <div class="extra-div col-lg-4 col-md-4 col-12">
@@ -215,7 +216,7 @@
             Or Website. It Is Abbreviated As Js is An Intreputed LanguageIt Was Created By Brendan Eich</h6>
           <hr>
           <a href="templates/JavaScript/JavaScript_Hompage.html" class="btn btn-primary"
-            style="outline: none; text-decoration: none;font-family: 'Merriweather', serif;">Start Learning
+            style="outline: none; text-decoration: none;font-family: 'Merriweather', serif;" data-toggle="tooltip" data-placement="top" title="Learn Javascript">Start Learning
             JavaScript</a>
         </div>
 
@@ -237,7 +238,7 @@
                 your
                 programming knowledge up to date with our coding articles.</p>
               <a href="templates/CodingArticles.html" name="Html" class="btn btn-primary"
-                style="font-family: 'Merriweather', serif;">Go To Coding Articles</a>
+                style="font-family: 'Merriweather', serif;" data-toggle="tooltip" data-placement="top" title="Go To Coding Artiles">Go To Coding Articles</a>
             </div>
           </div>
         </div>
@@ -246,11 +247,8 @@
             <img width="23px" height="245px" src="img/contact-bg.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title text-center">Contact Us</h5>
-              <p class="card-text text-center">Some of the latest coding information compiled as coding
-                articles. Keep
-                your
-                programming knowledge up to date with our coding articles.</p>
-              <a href="contact.html" name="Html" class="btn btn-primary" style="font-family: 'Merriweather', serif;">Go
+              <p class="card-text text-center">Do You Have Any Doubt? So Fell Free To Share your thought to me and definitely I Will Answer Your Question</p>
+              <a href="contact.html" name="Html" class="btn btn-primary" style="font-family: 'Merriweather', serif; margin-top: 44px;" data-toggle="tooltip" data-placement="top" title="Go To Contact Me">Go
                 to
                 Contact Us</a>
             </div>
@@ -262,10 +260,8 @@
             <div class="card-body">
               <h5 class="card-title text-center">About Us</h5>
               <p class="card-text text-center">Some of the latest coding information compiled as coding
-                articles. Keep
-                your
-                programming knowledge up to date with our coding articles.</p>
-              <center> <a href="about.html" class="btn btn-primary" style="font-family: 'Merriweather', serif;">Go to
+                articles. Do You Want To Know What I Do?</p>
+              <center> <a href="about.html" class="btn btn-primary" style="font-family: 'Merriweather', serif; margin-top: 44px;" data-toggle="tooltip" data-placement="top" title="About Me">Go to
                   About
                   Us</a></center>
             </div>
@@ -299,13 +295,13 @@
         <div class="container bg-dark text-warning"
           style="padding-top: 20px; padding-bottom: 25px; font-size: 1.24rem;">
           <div style="display: inline;"><a href="Disclamer"
-              style="text-decoration: none; font-size: 1.2rem; color: #fff;">DISCLAMER</a></div>
+              style="text-decoration: none; font-size: 1.2rem; color: #fff;" data-toggle="tooltip" data-placement="top" title="Disclamer">DISCLAMER</a></div>
           <div style="display: inline; margin-left: 20px; margin-right: 20px;"><a href="templates/Disclamer.html"
-              style="text-decoration: none; font-size: 1.2rem; color: #fff;">PRIVACY POLICY</a></div>
+              style="text-decoration: none; font-size: 1.2rem; color: #fff;" data-toggle="tooltip" data-placement="top" title="Privacy Policy">PRIVACY POLICY</a></div>
           <h6 style="display: inline; font-size: 1.2rem; float: right;"><a href="templates/PrivacyPolicy.html"
-              style="text-decoration: none; font-size: 1.2rem; color: #fff;">© CodingThunder 2020.By <a
+              style="text-decoration: none; font-size: 1.2rem; color: #fff;" data-toggle="tooltip" data-placement="top" title="CodingThunder">© CodingThunder 2020.By <a
                 href="https://startbootstrap.com/themes/blog/" target="_blank" class="text-warning"
-                style="text-decoration:none;">StartBoostrap.com</a></a></h6>
+                style="text-decoration:none;" data-toggle="tooltip" data-placement="top" title="StartBoostrap.com">StartBoostrap.com</a></a></h6>
         </div>
         <br><br>
         <div class="row">
@@ -328,8 +324,14 @@
       <br>
       <div class="container text-center">
         <a href="#Abhishek" class="btn px-5 rounded-pill shadow-sm backtotop" onclick="topFunction()" id="myBtn"
-          style="background-color: #16c9f6; color: white;" title="Back To Top">Back to
+          style="background-color: #16c9f6; color: white; padding-top: 20px;
+          padding-bottom: 20px;" title="Back To Top">Back to
           Top</a>
+          <br>
+          <br>  
+          <br>
+          <br>
+          <br>
       </div>
       </div>
     </footer>
@@ -348,7 +350,11 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
 </body>
-
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
 <script>
   
     var myVar;
