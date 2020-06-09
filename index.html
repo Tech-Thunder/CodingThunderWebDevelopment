@@ -43,6 +43,33 @@
     h5 {
       font-family: 'Merriweather', serif;
     }
+    
+    .vertical-menu {
+      width: 200px;
+      float: left;
+      display: flexbox;
+      opacity: .7;
+      position: sticky;
+      top: 2px;
+    }
+
+    .vertical-menu a {
+      background-color: #eee;
+      color: #4CAF50;
+      display: block;
+      padding: 12px;
+      text-decoration: none;
+    }
+
+    .vertical-menu a:hover {
+      background-color: #ccc;
+    }
+
+    .vertical-menu a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
     .counter-box {
       background: url('//4.bp.blogspot.com/-Tev2WNGyFs8/WaUuh31ZVRI/AAAAAAAADuY/5D9_uZ3rgrY9cVKC46DXxPMlXlxCOmB4gCK4BGAYYCw/s1600/sg-back.jpg') no-repeat;
       background-attachment: scroll;
@@ -200,6 +227,14 @@
     <h1 class="text-center">Learning Material</h1>
   </div>
   <br>
+  <hr>
+  <div class="container text-center vertical-menu" style="">
+    <a class="active">Contents</a>
+    <a href="#">HTML</a>
+    <a href="#">CSS</a>
+    <a href="#">JavaScript</a>
+    <a href="#">Bootstrap (Comming Soon)</a>
+  </div>
   <br>
   <!-- Main Content -->
   <div class="container">
@@ -331,16 +366,6 @@
         <br><br>
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
-            <ul class="list-inline text-center">
-              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-            </ul>
             <center>
               <p class="copyright text-muted">Copyright &copy; Coding Thunder 2020</p>
             </center>

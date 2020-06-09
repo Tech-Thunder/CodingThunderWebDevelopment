@@ -11,28 +11,60 @@
   <title>Coding Thunder</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
     type='text/css'>
   <link
     href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
     rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700;1,900&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700;1,900&family=Open+Sans+Condensed:wght@300&display=swap"
+    rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="/css/clean-blog.min.css" rel="stylesheet">
   <style>
-    html{
-    scroll-behavior: smooth;
+    html {
+      scroll-behavior: smooth;
     }
-    section{
-    margin-top:10px;
+
+    section {
+      margin-top: 10px;
     }
-    *,h1,h6,h5{
-    font-family: 'Merriweather', serif;
+
+    *,
+    h1,
+    h6,
+    h5 {
+      font-family: 'Merriweather', serif;
     }
+
+    .vertical-menu {
+      width: 200px;
+      float: left;
+      display: flexbox;
+      opacity: .7;
+      position: sticky;
+      top: 2px;
+    }
+
+    .vertical-menu a {
+      background-color: #eee;
+      color: #4CAF50;
+      display: block;
+      padding: 12px;
+      text-decoration: none;
+    }
+
+    .vertical-menu a:hover {
+      background-color: #ccc;
+    }
+
+    .vertical-menu a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
     .loader {
       position: fixed;
       z-index: 99;
@@ -44,172 +76,208 @@
       display: flex;
       justify-content: center;
       align-items: center;
-  }
-  .loader>img{
+    }
+
+    .loader>img {
       width: 200px;
-  }
-  .loader.hidden{
+    }
+
+    .loader.hidden {
       animation: fadeOut 1s;
       animation-fill-mode: forwards;
-  }
-  @keyframes fadeOut {
-      100%{
-          opacity: 0;
-          visibility: hidden;
+    }
+
+    @keyframes fadeOut {
+      100% {
+        opacity: 0;
+        visibility: hidden;
       }
-  }
+    }
   </style>
 </head>
 
 <body>
   <div class="loader">
     <img src="https://media.giphy.com/media/MDrmyLuEV8XFOe7lU6/giphy.gif" alt="loading..">
-</div>
+  </div>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top" style='opacity:.6;' id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="/">Coding Thunder</a>
+      <a class="navbar-brand" href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/index.html">Coding Thunder</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive" data-toggle="tooltip" data-placement="top" title="CodingThunder" aria-controls="navbarResponsive" aria-expanded="false"
-        aria-label="Toggle navigation">
+        data-target="#navbarResponsive" data-toggle="tooltip" data-placement="top" title="CodingThunder"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html" data-toggle="tooltip" data-placement="top" title="Home">Home</a>
+            <a class="nav-link"
+              href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/index.html"
+              data-toggle="tooltip" data-placement="top" title="Home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html" data-toggle="tooltip" data-placement="top" title="About">About</a>
+            <a class="nav-link"
+              href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/about.html"
+              data-toggle="tooltip" data-placement="top" title="About">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Services.html" data-toggle="tooltip" data-placement="top" title="Services">Services</a>
+            <a class="nav-link"
+              href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/Services.html"
+              data-toggle="tooltip" data-placement="top" title="Services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html" data-toggle="tooltip" data-placement="top" title="Contact">Contact</a>
+            <a class="nav-link"
+              href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/contact.html"
+              data-toggle="tooltip" data-placement="top" title="Contact">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url(' https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80')">
+  <header class="masthead">
     <div class="overlay"></div>
-    <div class="container">
+    <div class="jumbotron text-center">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>Coding Thunder</h1>
-            <span class="subheading">This Website Is Created by Abhishek Kumar</span>
-               <center>
-                   <h2 class="jumbotron-heading text-white"><span id="typed"></span></h2>
-                </center><br>
+            <br>
+            <br>
+            <br>
+            <center>
+              <h1>Coding Thunder</h1>
+              <span class="subheading">This Website Is Created by Abhishek Kumar</span>
+            </center>
+            <center>
+              <h2 class="jumbotron-heading text-dark"><span id="typed"></span></h2>
+            </center><br>
           </div>
         </div>
       </div>
     </div>
   </header>
-<br>
-<div class="container">
-    <center><h1>Learning Metarial</h1></center>
-    </div>
-<div class="container">
+  <br>
+  <div class="container">
+    <center>
+      <h1>Learning Metarial</h1>
+    </center>
+  </div>
+  <br>
+  <hr>
+  <div class="container text-center vertical-menu" style="">
+    <a class="active">Contents</a>
+    <a href="JavaScript_Hompage.html">Javascript
+      Hompage</a>
+    <a href="JavaScript_1.html">Javascript
+      Introduction</a>
+    <a href="JavaScript_2.html">Javascript
+      Output</a>
+    <a href="JavaScript_3.html">JavaScript
+      Statments</a>
+    <a href="#">JavaScript Variable (Comming Soon)</a>
+    <a href="#">JavaScript Comments (Comming Soon)</a>
+  </div>
+  <br>
+  <div class="container">
     <h1>JavaScript Display Possibilities</h1>
     <p>We Can Display JavaScript can "display" data in different ways:</p>
     <ul>
-        <li>We Can Diplay Output in JavaScript By using innerHTML.</li>
-        <li>We Can Diplay Output in JavaScript By using document.write().</li>
-        <li>We Can Diplay Output in JavaScript By using window.alert().</li>
-        <li>We Can Diplay Output in JavaScript By using console.log()</li>
+      <li>We Can Diplay Output in JavaScript By using innerHTML.</li>
+      <li>We Can Diplay Output in JavaScript By using document.write().</li>
+      <li>We Can Diplay Output in JavaScript By using window.alert().</li>
+      <li>We Can Diplay Output in JavaScript By using console.log()</li>
     </ul>
     <h1>Display Output By Using innerHTML JavaScript</h1>
     <p>Using innerHTML
-To access an HTML element, JavaScript can use the document.getElementById(id) method.
+      To access an HTML element, JavaScript can use the document.getElementById(id) method.
 
-The id attribute defines the HTML element. The innerHTML property defines the HTML content:</p>
+      The id attribute defines the HTML element. The innerHTML property defines the HTML content:</p>
     <h1>Using document.write()</h1>
-<p>It Is Used To Display Text By Using document.write().But When we use this it will remove the exting Content</p>
+    <p>It Is Used To Display Text By Using document.write().But When we use this it will remove the exting Content</p>
     <h1>Using window.alert()</h1>
     <p>It Used when we have to show a alert</p>
     <h1>Using console.log()</h1>
-<p>For debugging purposes,We Can Use console.log() to display data.
-</p>
-</div>
- <!-- Footer -->
- <footer>
-  <br><br>
-  <div class="row">
-    <div class="col-lg-8 col-md-10 mx-auto">
-      <ul class="list-inline text-center">
-        <li class="list-inline-item">
-          <a href="#">
-            <span class="fa-stack fa-lg">
-              <i class="fas fa-circle fa-stack-2x"></i>
-              <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-        </li>
-      </ul>
-      <p class="copyright text-muted">Copyright &copy; Coding Thunder 2020</p>
-    </div>
+    <p>For debugging purposes,We Can Use console.log() to display data.
+    </p>
   </div>
-</div>
-<br>
-<div class="container text-center">
-  <a href="#Abhishek" class="btn px-5 rounded-pill shadow-sm backtotop" onclick="topFunction()" id="myBtn"
-    style="background-color: #16c9f6; color: white;" title="Back To Top">Back to
-    Top</a>
-</div>
-</footer>
-   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-<!-- Bootstrap core JavaScript -->
-<script src="/vendor/jquery/jquery.min.js"></script>
-<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Footer -->
+  <footer>
+    <br>
+    <hr><br>
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <center>
+          <p class="copyright text-muted">Copyright &copy; Coding Thunder 2020</p>
+        </center>
+      </div>
+    </div>
+    </div>
+    <br>
+    <div class="container text-center">
+      <a href="#Abhishek" class="btn px-5 rounded-pill shadow-sm backtotop" onclick="topFunction()" id="myBtn" style="background-color: rgb(85, 22, 221); color: white; padding-top: 22px;
+    padding-bottom: 22px; font-size: 20px;" title="Back To Top">Back to
+        Top</a>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/433888fe69.js" crossorigin="anonymous"></script>
 
-<!-- Custom scripts for this template -->
-<script src="js/clean-blog.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
 </body>
- <script>
-  window.addEventListener('load', function(){
-      const loader=document.querySelector(".loader");
-      loader.className +=' hidden';
+<script>
+  window.addEventListener('load', function () {
+    const loader = document.querySelector(".loader");
+    loader.className += ' hidden';
   });
 </script>
 <script>
-mybutton = document.getElementById("myBtn");
-window.onscroll = function () { scrollFunction() };
+  window.addEventListener('load', function () {
+    const loader = document.querySelector(".loader");
+    loader.className += ' hidden';
+  });
+</script>
+<script>
+  mybutton = document.getElementById("myBtn");
+  window.onscroll = function () { scrollFunction() };
 
-function scrollFunction() {
-if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-mybutton.style.display = "inline";
-} else {
-mybutton.style.display = "none";
-}
-}
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "inline";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
 
-function topFunction() {
-document.body.scrollTop = 0;
-document.documentElement.scrollTop = 0;
-}
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 
-window.onload = function () {
-console.log("loaded")
-var typed = new Typed('#typed', {
-strings: ["Hello I Am Abhishek Kumar", "Welcome to Computer King", "Learn To Make Awesome Websites", "Learn Web development", "Learn To Make Responsive Websites", "Learn Python Web Development", "and other awesome Web Development concepts with Abhishek Kumar :)"],
-backSpeed: 15,
-smartBackspace: true,
-backDelay: 1200,
-startDelay: 1000,
-typeSpeed: 25,
-loop: true,
-});
-};
+  window.onload = function () {
+    console.log("loaded")
+    var typed = new Typed('#typed', {
+      strings: ["Hello I Am Abhishek Kumar", "Welcome to Computer King", "Learn To Make Awesome Websites", "Learn Web development", "Learn To Make Responsive Websites", "Learn Python Web Development", "and other awesome Web Development concepts with Abhishek Kumar :)"],
+      backSpeed: 15,
+      smartBackspace: true,
+      backDelay: 1200,
+      startDelay: 1000,
+      typeSpeed: 25,
+      loop: true,
+    });
+  };
 </script>
 
 </html>
