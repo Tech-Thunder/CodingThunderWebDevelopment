@@ -9,174 +9,301 @@
   <meta name="author" content="">
 
   <title>Coding Thunder</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Custom fonts for this template -->
-  <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
     type='text/css'>
   <link
     href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
     rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700;1,900&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700;1,900&family=Open+Sans+Condensed:wght@300&display=swap"
+    rel="stylesheet">
   <!-- Custom styles for this template -->
-  <link href="/css/clean-blog.min.css" rel="stylesheet">
   <style>
-    html{
-    scroll-behavior: smooth;
+    html {
+      scroll-behavior: smooth;
     }
-    section{
-    margin-top:10px;
+
+    section {
+      margin-top: 10px;
     }
-    *,h1,h6,h5{
-    font-family: 'Merriweather', serif;
+
+    *,
+    h1,
+    h6,
+    h5 {
+      font-family: 'Merriweather', serif;
+    }
+
+    .vertical-menu {
+      width: 200px;
+      float: left;
+      display: flexbox;
+      opacity: .7;
+      position: sticky;
+      top: 2px;
+    }
+
+    .vertical-menu a {
+      background-color: #eee;
+      color: #4CAF50;
+      display: block;
+      padding: 12px;
+      text-decoration: none;
+    }
+
+    .vertical-menu a:hover {
+      background-color: #ccc;
+    }
+
+    .vertical-menu a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .loader {
+      position: fixed;
+      z-index: 99;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .loader>img {
+      width: 200px;
+    }
+
+    .loader.hidden {
+      animation: fadeOut 1s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeOut {
+      100% {
+        opacity: 0;
+        visibility: hidden;
+      }
     }
   </style>
 </head>
 
 <body>
-<!-- Page Header -->
-<header class="masthead" style="background-image: url('/img/Background (2).jpg') ">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="site-heading">
-          <h1>Coding Thunder</h1>
-          <span class="subheading">The Coding Thunder By Abhishek Kumar</span>
-          <br>
-          <center>
-            <h2 class="jumbotron-heading text-white"><span id="typed"></span></h2>
-          </center><br>
+  <div class="loader">
+    <img src="https://media.giphy.com/media/MDrmyLuEV8XFOe7lU6/giphy.gif" alt="loading..">
+  </div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top" style='opacity:.6;' id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="/">Coding Thunder</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" data-toggle="tooltip" data-placement="top" title="CodingThunder"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link"
+              href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/index.html"
+              data-toggle="tooltip" data-placement="top" title="Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+              href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/about.html"
+              data-toggle="tooltip" data-placement="top" title="About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+              href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/Services.html"
+              data-toggle="tooltip" data-placement="top" title="Services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+              href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/contact.html"
+              data-toggle="tooltip" data-placement="top" title="Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Header -->
+  <header class="masthead">
+    <div class="overlay"></div>
+    <div class="jumbotron text-center">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <br>
+            <br>
+            <br>
+            <center>
+              <h1>Coding Thunder</h1>
+              <span class="subheading">This Website Is Created by Abhishek Kumar</span>
+            </center>
+            <center>
+              <h2 class="jumbotron-heading text-dark"><span id="typed"></span></h2>
+            </center><br>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
-
-<!-- Main Content -->
-<section class="header-extradiv">
+  </header>
   <div class="container">
     <h1 class="text-center" style="font-family: 'Poppins', sans-serif;">Learning Material</h1>
   </div>
   <br>
+  <hr>
   <br>
-  <div class="container">
-    <center>
-      <h1 class="text-center">Hyper Text Markup Language</h1>
-    </center>
+  <!-- Main Content -->
+  <section class="header-extradiv">
+    <div class="container">
+      <h1 class="text-center" style="font-family: 'Poppins', sans-serif;">Learning Material</h1>
+    </div>
+    <br>
     <br>
     <div class="container">
-      <h1>The &lt;form> Element&lt;/form></h1>
+      <center>
+        <h1 class="text-center">Hyper Text Markup Language</h1>
+      </center>
+      <br>
+      <div class="container text-center vertical-menu" style="">
+        <a class="active">Contents</a>
+        <a href="Html.html">HTML Hompage</a>
+        <a href="Html_1.html">Html Tutorial 1</a>
+        <a href="Html_2.html">Html Tutorial 2</a>
+        <a href="Html_3.html">Html Tutorial 3</a>
+        <a href="#">Html Tutorial 4 (Comming Soon)</a>
+        <a href="#">Html Tutorial 5 (Comming Soon)</a>
+      </div>
+      <br>
+      <div class="container">
+        <h1>The &lt;form> Element&lt;/form></h1>
         <p>The HTML &lt;form> element defines a form that is used to collect user input:&lt;/form></p>
-      <p>The &lt;input> Element
-The &lt;input> element is the most important form element.<br>
+        <p>The &lt;input> Element
+          The &lt;input> element is the most important form element.<br>
 
-The &lt;input> element is displayed in several ways, depending on the type attribute.<br><br>
+          The &lt;input> element is displayed in several ways, depending on the type attribute.<br><br>
 
-&lt;input type="text">	Defines a single-line text input field.<br>
-&lt;input type="radio">	Defines a radio button (for selecting one of many choices).<br>
-      &lt;input type="submit">	Defines a submit button (for submitting the form)</p><br>
+          &lt;input type="text"> Defines a single-line text input field.<br>
+          &lt;input type="radio"> Defines a radio button (for selecting one of many choices).<br>
+          &lt;input type="submit"> Defines a submit button (for submitting the form)</p><br>
 
-      <h1>Text Fields</h1>
-      <p>&lt;input type="text"> defines a single-line input field for text input.</p><br>
+        <h1>Text Fields</h1>
+        <p>&lt;input type="text"> defines a single-line input field for text input.</p><br>
 
 
-      <p><h1>The <code>&lt;label></code> Element</h1><br>
+        <p>
+        <h1>The <code>&lt;label></code> Element</h1><br>
         Notice the use of the <code>&lt;label></code> element in the example above.<br>
 
-   The <code>&lt;label></code> tag defines a label for many form elements.<br>
+        The <code>&lt;label></code> tag defines a label for many form elements.<br>
 
-   The <code>&lt;label></code> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user is focused on the input element.<br>
+        The <code>&lt;label></code> element is useful for screen-reader users, because the screen-reader will read out
+        loud the label when the user is focused on the input element.<br>
 
-   The <code>&lt;label></code> element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <code>&lt;label></code> element, it toggles the radio button/checkbox.<br>
+        The <code>&lt;label></code> element also help users who have difficulty clicking on very small regions (such as
+        radio buttons or checkboxes) - because when the user clicks the text within the <code>&lt;label></code> element,
+        it toggles the radio button/checkbox.<br>
 
-   The for attribute of the <code>&lt;label></code> tag should be equal to the id attribute of the <code>&lt;input></code> element to bind them together.<br>
+        The for attribute of the <code>&lt;label></code> tag should be equal to the id attribute of the
+        <code>&lt;input></code> element to bind them together.<br>
 
-Radio Buttons<br>
-   <code>&lt;input type="radio"></code> defines a radio button.<br>
+        Radio Buttons<br>
+        <code>&lt;input type="radio"></code> defines a radio button.<br>
 
-Radio buttons let a user select ONE of a limited number of choices.<br>
-           </p>
-      <p>
-      <h1>The Submit Button</h1>
-      <code>&lt;input type="submit"></code> defines a button for submitting the form data to a form-handler.<br>
+        Radio buttons let a user select ONE of a limited number of choices.<br>
+        </p>
+        <p>
+        <h1>The Submit Button</h1>
+        <code>&lt;input type="submit"></code> defines a button for submitting the form data to a form-handler.<br>
 
-The form-handler is typically a page on the server with a script for processing input data.<br>
+        The form-handler is typically a page on the server with a script for processing input data.<br>
 
-The form-handler is specified in the form's action attribute.<br>
-      </p>
+        The form-handler is specified in the form's action attribute.<br>
+        </p>
 
+      </div>
     </div>
-  </div>
-</section>
-<footer>
-  <br><br>
-  <div class="row">
-    <div class="col-lg-8 col-md-10 mx-auto">
-      <ul class="list-inline text-center">
-        <li class="list-inline-item">
-          <a href="#">
-            <span class="fa-stack fa-lg">
-              <i class="fas fa-circle fa-stack-2x"></i>
-              <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-            </span>
-          </a>
-        </li>
-      </ul>
-      <p class="copyright text-muted">Copyright &copy; Coding Thunder 2020</p>
+  </section>
+  <footer>
+    <br><br>
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <center>
+          <p class="copyright text-muted">Copyright &copy; Coding Thunder 2020</p>
+        </center>
+      </div>
     </div>
-  </div>
-</div>
-<br>
-<div class="container text-center">
-  <a href="#Abhishek" class="btn px-5 rounded-pill shadow-sm backtotop" onclick="topFunction()" id="myBtn"
-    style="background-color: #16c9f6; color: white;" title="Back To Top">Back to
-    Top</a>
-</div>
-</footer>
-<!-- Bootstrap core JavaScript -->
-<script src="/vendor/jquery/jquery.min.js"></script>
-<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Custom scripts for this template -->
-<script src="js/clean-blog.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+    </div>
+    <br>
+    <div class="container text-center">
+      <a href="#Abhishek" class="btn px-5 rounded-pill shadow-sm backtotop" onclick="topFunction()" id="myBtn" style="background-color: rgb(85, 22, 221); color: white; padding-top: 22px;
+  padding-bottom: 22px; font-size: 20px;" title="Back To Top">Back to
+        Top</a>
+    </div>
+    <br>
+    <br>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/433888fe69.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
 
 </body>
-
 <script>
-mybutton = document.getElementById("myBtn");
-window.onscroll = function () { scrollFunction() };
+  window.addEventListener('load', function () {
+    const loader = document.querySelector(".loader");
+    loader.className += ' hidden';
+  });
+</script>
+<script>
+  mybutton = document.getElementById("myBtn");
+  window.onscroll = function () { scrollFunction() };
 
-function scrollFunction() {
-if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-mybutton.style.display = "inline";
-} else {
-mybutton.style.display = "none";
-}
-}
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "inline";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
 
-function topFunction() {
-document.body.scrollTop = 0;
-document.documentElement.scrollTop = 0;
-}
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
 
-window.onload = function () {
-console.log("loaded")
-var typed = new Typed('#typed', {
-strings: ["Hello I Am Abhishek Kumar", "Welcome to Computer King", "Learn To Make Awesome Websites", "Learn Web development", "Learn To Make Responsive Websites", "Learn Python Web Development", "and other awesome Web Development concepts with Abhishek Kumar :)"],
-backSpeed: 15,
-smartBackspace: true,
-backDelay: 1200,
-startDelay: 1000,
-typeSpeed: 25,
-loop: true,
-});
-};
+  window.onload = function () {
+    console.log("loaded")
+    var typed = new Typed('#typed', {
+      strings: ["Hello I Am Abhishek Kumar", "Welcome to CodingThunder", "Learn To Make Awesome Websites", "Learn Web development", "Learn To Make Responsive Websites", "Learn Python Web Development", "and other awesome Web Development concepts with Abhishek Kumar :)"],
+      backSpeed: 15,
+      smartBackspace: true,
+      backDelay: 1200,
+      startDelay: 1000,
+      typeSpeed: 25,
+      loop: true,
+    });
+  };
 </script>
 
 </html>

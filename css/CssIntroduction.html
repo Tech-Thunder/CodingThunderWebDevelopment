@@ -1,161 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CCS Tutorial</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            margin: 2px 2px 2px 2px;
-            padding: 2px 2px 2px 2px;
-            color: black;
-        }
 
-        p {
-            font-weight: bold;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-        h1 {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 12px 12px 12px 12px;
-            margin-top: 5px;
-            text-shadow: 20px black;
-            border-radius: 20px;
-            float: none;
-            padding: 1px 1px 1px 4px;
-        }
+  <title>Coding Thunder</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Custom fonts for this template -->
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700;1,900&family=Open+Sans+Condensed:wght@300&display=swap"
+    rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
 
-        table td {
-            overflow-x: hidden;
-            overflow-y: hidden;
-            border-spacing: 3px;
-        }
+    section {
+      margin-top: 10px;
+    }
 
-        td {
-            padding: 30px;
-            margin: 1%;
-        }
+    *,
+    h1,
+    h6,
+    h5 {
+      font-family: 'Merriweather', serif;
+    }
+    .vertical-menu {
+      width: 200px;
+      float: left;
+      display: flexbox;
+      opacity: .7;
+      position: sticky;
+      top: 2px;
+    }
 
-        img {
-            padding: 2px 2px 2px 2px;
-            border-radius: 20px;
-        }
+    .vertical-menu a {
+      background-color: #eee;
+      color: #4CAF50;
+      display: block;
+      padding: 12px;
+      text-decoration: none;
+    }
 
-        .span1 {
-            color: grey;
-        }
+    .vertical-menu a:hover {
+      background-color: #ccc;
+    }
 
-        .span2 {
-            color: lightgreen;
-        }
+    .vertical-menu a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .loader {
+      position: fixed;
+      z-index: 99;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-        h2 {
-            margin: 3px 3px 3px 3px;
-        }
+    .loader>img {
+      width: 200px;
+    }
 
-        .next {
-            margin: 5px 5px 5px 5px;
-            float: right;
-            font-weight: bold;
-            font-size: 25px;
-            color: lightgreen;
-        }
+    .loader.hidden {
+      animation: fadeOut 1s;
+      animation-fill-mode: forwards;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .Previous {
-            margin: 5px 5px 5px 5px;
-            float: Left;
-            font-weight: bold;
-            font-size: 25px;
-            color: lightgreen;
-        }
-
-        p {
-            font-size: 18px;
-            z-index: 4;
-            margin: 12px 12px 12px 12px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        table {
-            margin-left: 20px;
-            font-size: 20px;
-        }
-
-        a:active:hover {
-            color: greenyellow;
-        }
-
-        div {
-            font-size: 20px;
-            margin: 25px 25px 25px 25px;
-        }
-
-        h5 {
-            margin: 30px 30px 30px 30px;
-        }
-
-        button {
-            background: #fff;
-            color: #ff0000;
-            text-decoration: none;
-            width: 240px;
-            height: 80px;
-            border: 1px solid red;
-            font-size: 18px;
-            border-radius: 10px;
-            pointer-events: all;
-        }
-
-        button:hover {
-            background: red;
-            color: white;
-            cursor: pointer;
-            font-family: 'Times New Roman', Times, serif;
-            text-decoration: bold;
-            font-size: 19px;
-        }
-    </style>
-    <link rel="stylesheet" href="css/HtmlHompage.css">
-    <link rel="icon" href="Image/css.jpg">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    @keyframes fadeOut {
+      100% {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <div class="loader">
+    <img src="https://media.giphy.com/media/MDrmyLuEV8XFOe7lU6/giphy.gif" alt="loading..">
+  </div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top" style='opacity:.6;' id="mainNav">
     <div class="container">
-        <center>
-            <h1 class="display-3"><span class="span1">C</span><span class="span1">o</span><span
-                    class="span1">m</span><span class="span1">p</span><span class="span1">u</span><span
-                    class="span1">t</span><span class="span1">e</span><span class="span1">r</span><span
-                    class="span2">.</span><span class="span2">G</span><span class="span2">r</span><span
-                    class="span2">u</span>
-            </h1>
-        </center>
-        <br><br>
-        <br>
-        <br>
-        <h2>CSS Introduction</h2>
-        <br>
-        <a href="Css3Hompage.html" class="Previous">Previous >></a>
-        <a href="CSSSyntaxandSelectors.html" class="next">Next >></a>
-        <br>
-        <hr>
+      <a class="navbar-brand" href="/">Coding Thunder</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" data-toggle="tooltip" data-placement="top" title="CodingThunder"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link"
+              href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/index.html"
+              data-toggle="tooltip" data-placement="top" title="Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+              href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/about.html"
+              data-toggle="tooltip" data-placement="top" title="About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+              href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/Services.html"
+              data-toggle="tooltip" data-placement="top" title="Services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+              href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/contact.html"
+              data-toggle="tooltip" data-placement="top" title="Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Header -->
+  <header class="masthead">
+    <div class="overlay"></div>
+    <div class="jumbotron text-center">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <br>
+            <br>
+            <br>
+            <center>
+              <h1>Coding Thunder</h1>
+              <span class="subheading">This Website Is Created by Abhishek Kumar</span>
+            </center>
+            <center>
+              <h2 class="jumbotron-heading text-dark"><span id="typed"></span></h2>
+            </center><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <h1 class="text-center" style="font-family: 'Poppins', sans-serif;">Learning Material</h1>
+  </div>
+  <br>
+  <hr>
+  <div class="container text-center vertical-menu" style="">
+        <a class="active">Contents</a>
+        <a href="Css3Hompage.html">CSS Hompage</a>
+        <a href="CSSBackgrounds.html">CSS Background</a>
+        <a href="CSSBorders.html">CSS Border</a>
+        <a href="CSSColor.html">CSS Color</a>
+        <a href="CSSHowTo.html">CSS HowTo</a>
+        <a href="CSSSyntaxandSelectors.html">CSS Syntax and Selectors</a>
+      </div>
+  <br>
+<h2>CSS Introduction</h2>
         <h1>What is CSS?</h1>
         <ul>
             <li>CSS stands for Cascading Style Sheets</li>
@@ -182,9 +196,80 @@
                    <hr>
                    <br>
                    <br>
-                   <a href="Css3Hompage.html" class="Previous"><<</a>
-                   <a href="CSSSyntaxandSelectors.html" class="next ">>></a>
-</div>
-</body>
 
-</html>
+</div>
+    <!-- Footer -->
+    <footer>
+        <br><br>
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <center>
+              <p class="copyright text-muted">Copyright &copy; Coding Thunder 2020</p>
+            </center>
+          </div>
+        </div>
+    </div>
+    <br>
+    <div class="container text-center">
+      <a href="#Abhishek" class="btn px-5 rounded-pill shadow-sm backtotop" onclick="topFunction()" id="myBtn" style="background-color: rgb(85, 22, 221); color: white; padding-top: 22px;
+    padding-bottom: 22px; font-size: 20px;" title="Back To Top">Back to
+        Top</a>
+    </div>
+    <br>
+    <br>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/433888fe69.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+  
+  </body>
+  <script>
+    window.addEventListener('load', function () {
+      const loader = document.querySelector(".loader");
+      loader.className += ' hidden';
+    });
+  </script>
+  <script>
+    mybutton = document.getElementById("myBtn");
+    window.onscroll = function () { scrollFunction() };
+  
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "inline";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+  
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  
+    window.onload = function () {
+      console.log("loaded")
+      var typed = new Typed('#typed', {
+        strings: ["Hello I Am Abhishek Kumar", "Welcome to CodingThunder", "Learn To Make Awesome Websites", "Learn Web development", "Learn To Make Responsive Websites", "Learn Python Web Development", "and other awesome Web Development concepts with Abhishek Kumar :)"],
+        backSpeed: 15,
+        smartBackspace: true,
+        backDelay: 1200,
+        startDelay: 1000,
+        typeSpeed: 25,
+        loop: true,
+      });
+    };
+  </script>
+  
+  </html>
