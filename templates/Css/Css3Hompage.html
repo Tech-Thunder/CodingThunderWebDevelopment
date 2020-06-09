@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Learn Web Development for free">
+  <meta name="author" content="Abhishekkumar">
+  <meta name="keywords" content="Learn Web Development | learn html | learn css">
+  <meta name="robots" content="index, follow">
+
+  <title>Coding Thunder</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Custom fonts for this template -->
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700;1,900&family=Open+Sans+Condensed:wght@300&display=swap"
+    rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section {
+      margin-top: 10px;
+    }
+    .vertical-menu {
+      width: 200px;
+      float: left;
+      display: flexbox;
+      opacity: .7;
+      position: sticky;
+      top: 2px;
+    }
+
+    .vertical-menu a {
+      background-color: #eee;
+      color: #4CAF50;
+      display: block;
+      padding: 12px;
+      text-decoration: none;
+    }
+
+    .vertical-menu a:hover {
+      background-color: #ccc;
+    }
+
+    .vertical-menu a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+    *,
+    h1,
+    h6,
+    h5 {
+      font-family: 'Merriweather', serif;
+    }
+
+    .loader {
+      position: fixed;
+      z-index: 99;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .loader>img {
+      width: 200px;
+    }
+
+    .loader.hidden {
+      animation: fadeOut 1s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeOut {
+      100% {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="loader">
+    <img src="https://media.giphy.com/media/MDrmyLuEV8XFOe7lU6/giphy.gif" alt="loading..">
+  </div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top" style='opacity:.6;' id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="/">Coding Thunder</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" data-toggle="tooltip" data-placement="top" title="CodingThunder"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link"
+              href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/index.html"
+              data-toggle="tooltip" data-placement="top" title="Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+              href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/about.html"
+              data-toggle="tooltip" data-placement="top" title="About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+              href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/Services.html"
+              data-toggle="tooltip" data-placement="top" title="Services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+              href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/contact.html"
+              data-toggle="tooltip" data-placement="top" title="Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Header -->
+  <header class="masthead">
+    <div class="overlay"></div>
+    <div class="jumbotron text-center">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <br>
+            <br>
+            <br>
+            <center>
+              <h1>Coding Thunder</h1>
+              <span class="subheading">This Website Is Created by Abhishek Kumar</span>
+            </center>
+            <center>
+              <h2 class="jumbotron-heading text-dark"><span id="typed"></span></h2>
+            </center><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <h1 class="text-center" style="font-family: 'Poppins', sans-serif;">Learning Material</h1>
+  </div>
+  <br>
+  <hr>
+  <br>
+        <div class="container">
+            <div class="row">
+                <div class="extra-div col-lg-4 col-md-4 col-12">
+                    <div class="card mx-auto my-2 p-2" style="width: 18rem;">
+                        <img width="23px" height="245px"
+                            src="data:image/png;base64,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"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Css Tutorial 1</h5>
+                            <center><h6 class="">Topics To Be Covered</h6></center>
+                            <p class="card-text text-center">
+                            <ul>
+                                <li>CSS3 BackGround</li>
+                            </ul>
+                            </p>
+                            <center><a href="CSSBackgrounds.html" name="Html" class="btn btn-primary">Go To Tutorial 1</a></center>
+                        </div>
+                    </div>
+                </div>
+              <div class="extra-div col-lg-4 col-md-4 col-12">
+                    <div class="card mx-auto my-2 p-2" style="width: 18rem;">
+                        <img width="23px" height="245px"
+                           src="data:image/png;base64,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"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Css3 Tutorial 2</h5>
+                            <center><h6 class="">Topics To Be Covered</h6></center>
+                            <p class="card-text text-center">
+                            <ul>
+                               <li>Css3 Border</li>
+                            </ul>
+                            </p>
+                            <a href="CSSBorders.html" name="Html" class="btn btn-primary">Go To  Tutorial 2</a>
+                        </div>
+                    </div>
+                </div>
+              <div class="extra-div col-lg-4 col-md-4 col-12">
+                    <div class="card mx-auto my-2 p-2" style="width: 18rem;">
+                        <img width="23px" height="245px"
+                            src="data:image/png;base64,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"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Css Tutorial 3</h5>
+                            <center><h6 class="">Topics To Be Covered</h6></center>
+                            <p class="card-text text-center">
+                            <ul>
+                               <li>CSS3 Color</li>
+                            </ul>
+                            </p>
+                            <center> <a href="CSSColor.html" class="btn btn-primary">Go to Tutorial 3</a></center>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+<div class="container">
+            <div class="row">
+                <div class="extra-div col-lg-4 col-md-4 col-12">
+                    <div class="card mx-auto my-2 p-2" style="width: 18rem;">
+                        <img width="23px" height="245px"
+                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL4AAAEKCAMAAACbhh94AAAA6lBMVEX///8BcLopqd/Pz88AAAAAY7Xv9fsAbLjMzMwAbrkAabkAo90hmdQAbbrW09D19fUjntclJSVejcCenp7K5vVycnKUlJSxvcwAY7YUdLvS6favr6+KiooPpd3B4PMootswMDDv7+97e3vO3u5/qtQfk9Dp8fgTExNTkcmwyuT1+v12m8OGyOqmpqZcXFzl5eUWhceevd01fb2Mstil1e8YiMmmt8pLs+IfHx+/v79oaGhFicVmm81zo9G5z+aautxoveaQqsey2/Gsu8uXrcdHR0e/x86Szuxrl8OBosVSib92wefI2Ou00eFYlGd7AAAN7ElEQVR4nO2d60LbuhKFHSAxVnBKWwokreHsQgMEeloChbbhVsrhvt//dY5l5yLJntG9Jntn/WwV81meWEujkRIESlrY2dlZwPUqbfY/vAm9yMe02Y+F1zItqHEpSoI+wv+PvNm7tNl7xcvN8H3gf/7n4/81w5/h/wPx3ype7gXi/1TEd0mvgh+w+DurH1ZXV99SfX7PaZHD//iB0+pYHzzh/xdr9nrU6jV6tQm+0wiHpYv/Hb3aBP+LU0pQ/zL8nR/vf2RaHGs+0+IXDv99/q+tTF+o/hqqUnxYqi/OF4r/sVr8nzP8Gb4p/kes2Xd3+J48zzsH+KsvFB/SKx4f1PeXif9F8fM7M/wyKT58SC8H/+cr6kg0L/5y8EHRZp9XC8qmIe94/Pm35WLnwH96rkubObRsVUzVHeJXMVVXxK9w2Jrhv0j84F+D/1LTVLIFpIV8vqDS+07xFfUqlUqzYTbhFSjHmYaZZppppplmmmmmmSpUb6LGNClHDurTLBK0o9r0qh8Mphg/3A3OwqohzBWeBdvTjH8UHJKqIcxFDoOLacbfC7amGf856NarhjBXfSvorVcNYa56IwimGb8XBNH0jlv11LP1pxY/qqX4u1M7bkX9FP/cK37kVPy1U8sTBEc+X/zRpyWH+sTzh+cpvlfXEC7POdQyHyjkKMX36hrc4i/xvZ96hsCva3CLLwQPuUjxvboGt/jfBPytFL8xPfhfefx6l6YafLoGx/j8xdd7NFUSexx23eILaYV6lulp+6N3jM9fO4oz/IHHYdctPg+aeYbAa67BJ37mGQKvuQan+JsC/nmG79M1OMUXPcN2hr83LfjioHuY4ft0DV7xLzL8jsdh1yl+mWfw6xqc4oueoZMvUEwNPn9tmiahIv5cg1N80TP0At+uIdx0iM9fOiLD5S2PrsEpvoDZHuJ7dA0e8cPBEB9xDbGlSDNpJmM1tcXSi57hbIh/CY5bpDUPqYWIaQauwiqo0euw/IJnCLeHF4VdA4KvpkWNFeYSdRIGX8wzHA4bPcP4i9Xir7C9L3qGvWGjLXDcIrfV4m+wvV/uGTDTQ9Zs8e1KkY9ZfNEzjPAbYK6BnFgGvyX+HYfPs2Vpkkxg7Mc31fb+AYsvmIORZ0BMT/xQbe9fse99wfKQcStwgSW8rxb/FB50o2jcClxgiR6rxUc8QzQYtwIXWKJ+tfjsaz8BPAO2wBJXit9T8QxYqoTY0Vvid1l80TNcjpshpsdy2LXD76h4BtT0WI5bdvicZyhPk1DBpif+VSX+sYrlwdaH4v0q8e8wy9MZN4NTJeGbKvExz7DemLQDY9/2xW+Hr+YZsFSJ5YvfDp/zDDz9cGklF5wqsZxv2eFjnqHPtIPLMsgaNieXyBY/gfGHSyu50FRJVGv3Uw0Gg8fHxzcKur+/38+0ZonPjlrlSyu58AUWpiIlzNM3YabSzM7ovwi5v23Z4Xcxy3PENHS9wBKR2sN8yzb2r7E0yR7T0G1VSUj6N8NclQV+j3vrI5YHcw36ismbtZb1m6dxkHD0Bc/wzDR2VlUSxfH+LZMlNMTvXDV5eDhNQuVogSUi7V/zLev3/sZpc64gYGkllwv8kDyetIRBWh+/d5yUwBfTJNyHrBdYopi+KAsOQxe/81SImqGEv0e4j1kusBSjxgg/jRoAvmB5+twHrRZYQjIoRI0+fu94rjRqhkI8g01ZBhA1uvjdA7jjqTDPEARHhvhp1DyURo0e/krxRSmorIRzIjPXgESNDv41GjW5oKWVXAauAY8aZfzeXSLp+EyYZzCoKhmbMjv8LviiFIR5Bm3XII8aJfwV5EUpCPMMelUlSlGjgK8S8iB+l7+WMr5i1MjwZS9KUeDSSi5F15BaebWowfHlL8oCPpwmoVJxDXnUqLND+FpRMxTqGVRcA42aRd2sTxG/MA9RE1COMZLMNTATQBv8knmIknDPINnBEnETQHP8lbJ5iAk+2RbwsVRJHKVRY5YsZPE3DEJ+JHhpJRfiGuJ9Q3YO/zpZxgp6kqJYfNwzoK7BZoFojN9dWVnZoFopV6ega2xp5VnAR1yDE3x9cQtb31DPgOYaKsLfYPElngFzDeS3eY7fAv9aqRxjJNg12KwuWuBz63Klu1ZYwa7BpirGAp9bl+OJCp4B2/dqszhqgc9laCWeAVtgsVkctcB/YuihEs6JYNdgU9Rjgc8uK8LlGCPBrsGmqMcCn11WFDxDeFRoDbsGm7VdC3wdz4C5hqhWCb6OZ8BdgzG9DT426IqewZdrMMdvcPg8UNEzYKdlELOpih0+tyoqlmOUtPfiGszxOcMpyTNQIa7BfNg1x+cMJ89T4hlQ12A+7JrjX2t5Bsw1WNQkmeOzhlP0DLsl7WHXEA3M8Y3PU2YNp9wzoK6hXQH+E4MvyzNQIa4hqgCfdWxyz4DnGkzpW/PG+KcIftEzyHIN4x8tux1qTUUnJ3/n6ZGRaLqESYqUjJ4jsY5NlmegwuoaYmKqT+y2s0TISzXvYHylbR+sfJyWge8YTY5B+p6mZwgCD/Qy/GsQv6HpGfycsSXB3wDxOcsjgLVLP+HjjC0cv7kC4nP75RQ8g58ztiS93ykFodpAPEMxz0Dl44wtSe/DL85jTc/g57QMCX4hVTnWnaZn8HPGlgQfpOcsj4pn8HNaBr7ZO4HxMctT5hn8nLEl2asO47OWR8Uz+DmkCsc/hfHZZtK1iVxY76ucEegSH7M8wBdeitMWVCOyoQLHfwLpe9qeAXMN6XSxfH/BvWwxHsNPYPwukmeoAZ+BXQOUpW39im3wYb/cgfMMpWkSKtg1gLPdG8nLFn3vI36ZzfKIW0XL8gxUiGsANhC1flvhw375GrE8YjnGSIhrgM6bWLPCh/3yMeIZimsTuRDXAO1/urXBR/zyAYJ/CHzGpK7Bqvdhv8yuy8FbRXlhuQbgvImWZKzAex/2y4hnIOWeATtuAkzxtyS//YDjw36ZbaboGdC6hhOg9yUTZDx4QHrMM6w3oA/BJ3PGN0DvP+LDriG+fpqECtk4ChyX0ZK4Bny6AoJ0YcvDbRXlhSywACsUrQfcNaD4sOFEPAOQJqGCizmhFQqZ6THE39BOk1DBxZxgYYDE9KD4VyAI5hnK0yRUyAoFZDklpgfDT2B8/TQJFbwFBFyhkLgGGD9pnsKOzcQzYMdNgCsUiyb4Scp+jOT2tZdWciEbR8E96/h8sQQ/aSZPG/B4mwnzDOVpEioD0zP/65GQOATPJ1oW2U/vYKM21hyMD6RJqJBUCVgYkM54137d90n5TbCTxaTZvLoGR3xO2ksruZDpFlZOSGfttycPj7W6eA9j/KQ5dwDbe7EbMc+AxB1ieuSHbKX3sHjy8KbN3kOY5N2Of1NFIZ4BTJNQwb8dpliPl2VP8mCK43QukOI3m0/wpLBcWJ4BSpNQIakSjXq8LAW0drM/iEh9+UqXPUA9QwR7BqNUCR5Mv3ViZizMM0BpEir9VIlEZkcqYtUksGfAUyVGZ62YFcQcwJYHWFrJhbkGo8MhzfDNPAOeKgFmuz7wdcsxRkKOIzc7XdEM38wzoBtHzQqxzfDVTtQqCqkqMasIM8LvIRWocJqECj6O3KyS2Qgfq0DFPANalmFUUmWE30G2fcBpEipk3yvR3Otqjo+UY6CeAS3L4E+u8YbfPeZOY8NPxxC1je28JO37k8WW1j3o4Teun+aEDbGqSyu5JGdshYT090/m1W9BHb+3cZCiFzbzimkSzDOonJYRxektPPxWvANF/M7dabN8H7J6moQKMT38LcSPD2sKd6CA3zm+Kun1kVSXVnKpn7GV3kL05uZW8hQk+GmwJ/jub9WllVxaVSVRKP02I/h5sGPoVDqeweCMLcm3GcKHg13E5/9cXZJoMSlJyr7N+6VPoQwfD3ZBWp7B/Iwt4BZE/K402EV81aWVXDZnbE1uYYLPVJA3lIJdkOR0DFG2P2KS3cLk6zzCBwYlubQ8A+4atG5h+HVO8Xsrqt/TosRqEtwzuCvmHN7C2t/m6FQ6eQYqlydz0lswOk9lIj3P4LwWNbKC10uTULk8mbNm/5tDep7BeS1qaBc7mp7B+U+f2fa+pmcwcw0IvuWvnUmPlxDldguILb4w6IZSfLc/fWaFv/RNcGCSPAOV2y0gxvibn75GYeGH1OF6hpFcuAZb/KWvtdKVYnRtIhf802d/Bn/5W7vQ6+OrQSWcE7k9z1sPP48Y+GpSz6Caa/CAD0UMiy/zDK5dgyJ+HjHSV7bUM7j+wVQF/DRipN0+FFbPMNIfxV+i3a58NblncPwz6xi+YsQwgks4J4LrGkzwAcumETGM4BrIiXZd/l5tKb5exIwVEVmegap71K9LdwQZ4y9/0o2Y4YXIev9I/uLJ1Ls4b7u5BQ4/MYoYmoest88vJOVv4kM43CXEOo4m+MYRQ8juoVFdSvC83V8nJn9UwN80i5iIRsw2VgUgfwh7ZzYPIdxcNouYtNvr5GzPrNuFh5B9mc1uoWjalT5E6v0jq27nZfkQ9NhddTuvLYuHoIyedvul4vtRX/Qh1H09hBQ9Prtw3+28/DyElH1wqVAe7EK9i7PI3chMR9T29rPesGSrdFhzcQf0/bi7p1bZ7FrPdt4iH5a8fVFV1L00fAjuhiVbXWzTsmvdbnc5LNkq+yaovVHTd0x4XlG0Y3o+akvfqGm3Dw4rjXZM6LCWdnttW9O2/3ltXZYMa+kXtb77Ir6oCkpnazHzEOiwpDrReynqXmZTnSqHJUvRKfPAb7f/HwBkQFLHJ9qeAAAAAElFTkSuQmCC"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Css Tutoria 4</h5>
+                            <center><h6 class="">Topics To Be Covered</h6></center>
+                            <p class="card-text text-center">
+                            <ul>
+                               <li>Css3 How To Use</li>
+                            </ul>
+                            </p>
+                            <a href="/" name="Html" class="btn btn-primary" onclick="Comming_soon()">Go to Tutorial 4</a>
+                        </div>
+                    </div>
+                </div>
+              <div class="extra-div col-lg-4 col-md-4 col-12" style="">
+                    <div class="card mx-auto my-2 p-2" style="width: 18rem;">
+                        <img width="23px" height="245px"
+                            src="data:image/png;base64,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"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Css Tutorial 5</h5>
+                             <center><h6 class="">Topics To Be Covered</h6></center>
+                            <p class="card-text text-center">
+                                 <ul>
+                               <li>Css Margins</li>
+                            </ul>
+                            </p>
+                            <a href="/" name="Html" class="btn btn-primary" onclick="Comming_soon()" >Go to Tutorial 5</a>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+<script>
+    function Comming_soon(){
+    alert('This Tutorial Will Be Avaliable Soon On Coding Thunder')
+    }
+  </script>
+    <!-- Footer -->
+    <footer>
+      <br><br>
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <center>
+            <p class="copyright text-muted">Copyright &copy; Coding Thunder 2020</p>
+          </center>
+        </div>
+      </div>
+  </div>
+  <br>
+  <div class="container text-center">
+    <a href="#Abhishek" class="btn px-5 rounded-pill shadow-sm backtotop" onclick="topFunction()" id="myBtn" style="background-color: rgb(85, 22, 221); color: white; padding-top: 22px;
+      padding-bottom: 22px; font-size: 20px;" title="Back To Top">Back to
+      Top</a>
+  </div>
+  <br>
+  <br>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/433888fe69.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+
+</body>
+<script>
+  window.addEventListener('load', function () {
+    const loader = document.querySelector(".loader");
+    loader.className += ' hidden';
+  });
+</script>
+<script>
+  mybutton = document.getElementById("myBtn");
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "inline";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  window.onload = function () {
+    console.log("loaded")
+    var typed = new Typed('#typed', {
+      strings: ["Hello I Am Abhishek Kumar", "Welcome to CodingThunder", "Learn To Make Awesome Websites", "Learn Web development", "Learn To Make Responsive Websites", "Learn Python Web Development", "and other awesome Web Development concepts with Abhishek Kumar :)"],
+      backSpeed: 15,
+      smartBackspace: true,
+      backDelay: 1200,
+      startDelay: 1000,
+      typeSpeed: 25,
+      loop: true,
+    });
+  };
+</script>
+
+</html>
