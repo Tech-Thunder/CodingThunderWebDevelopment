@@ -2,19 +2,20 @@
 <html lang="en">
 
 <head>
-
+  <meta name="google-site-verification" content="2_X2O6aingsBwHGSEBjgkarsMwLZNY3c2jhkh2rWWWw" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Learn Web Development for free">
   <meta name="author" content="Abhishekkumar">
-  <meta name="keywords" content="Learn Web Development | learn html | learn css">
+  <meta name="keywords"
+    content="Learn Web Development ,learn html , learn css ,  Coding Articles , Coding Tips , Coding Trick ,Learn JavaScript , Learn Web Development For Free , Html full Cource, Html for biginners ,Html for Aboslute, Css full Cource, Css for biginners ,Css for Aboslute, JavaScript full Cource, JavaScript for biginners ,JavaScript for Aboslute">
   <meta name="robots" content="index, follow">
 
-
   <title>Coding Thunder</title>
+  <link rel="stylesheet" href="static/css/main.css" />
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- Custom fonts for this template -->
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
     type='text/css'>
   <link
@@ -23,8 +24,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700;1,900&family=Open+Sans+Condensed:wght@300&display=swap"
     rel="stylesheet">
-  <!-- Custom styles for this template -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
     html {
       scroll-behavior: smooth;
     }
@@ -38,6 +44,78 @@
     h6,
     h5 {
       font-family: 'Merriweather', serif;
+    }
+
+    .counter-box {
+      background: url('//4.bp.blogspot.com/-Tev2WNGyFs8/WaUuh31ZVRI/AAAAAAAADuY/5D9_uZ3rgrY9cVKC46DXxPMlXlxCOmB4gCK4BGAYYCw/s1600/sg-back.jpg') no-repeat;
+      background-attachment: scroll;
+      background-size: cover;
+      background-position: 50% 0;
+      overflow: hidden;
+      margin: 0 auto;
+      padding: 40px 0;
+      position: relative;
+    }
+
+    .counter-box:before {
+      background: rgba(0, 0, 0, 0.7);
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+    }
+
+    .counter-box-wrap {
+      margin: 0 auto;
+    }
+
+    .counter-box-item {
+      width: 25%;
+      float: left;
+      padding: 10px;
+      box-sizing: border-box;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+
+    .counter-box-item i {
+      font-size: 24px;
+    }
+
+    .counter-sora {
+      color: #fff;
+      font-size: 48px;
+      line-height: 48px;
+      font-weight: 700;
+      margin: 10px 0;
+      -webkit-transition: all 300ms linear;
+      -moz-transition: all 300ms linear;
+      -o-transition: all 300ms linear;
+      transition: all 300ms linear;
+    }
+
+    .counter-sora-text {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #fff;
+    }
+
+    .special-tiles,
+    .works-tiles,
+    .about-tiles,
+    .counter-box-item {
+      width: 100%;
+    }
+
+    .counter-box-item,
+    .works-tiles {
+      width: 50%;
     }
 
     .loader {
@@ -68,110 +146,49 @@
         visibility: hidden;
       }
     }
-    .vertical-menu {
-      width: 200px;
-      float: left;
-      display: flexbox;
-      opacity: .7;
-      position: sticky;
-      top: 2px;
-    }
-
-    .vertical-menu a {
-      background-color: #eee;
-      color: #4CAF50;
-      display: block;
-      padding: 12px;
-      text-decoration: none;
-    }
-
-    .vertical-menu a:hover {
-      background-color: #ccc;
-    }
-
-    .vertical-menu a.active {
-      background-color: #4CAF50;
-      color: white;
-    }
   </style>
 </head>
 
-<body>
+<body class="landing">
   <div class="loader">
     <img src="https://media.giphy.com/media/MDrmyLuEV8XFOe7lU6/giphy.gif" alt="loading..">
   </div>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top" style='opacity:.6;' id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="/">Coding Thunder</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-        data-target="#navbarResponsive" data-toggle="tooltip" data-placement="top" title="CodingThunder"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link"
-              href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/index.html"
-              data-toggle="tooltip" data-placement="top" title="Home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"
-              href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/about.html"
-              data-toggle="tooltip" data-placement="top" title="About">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"
-              href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/Services.html"
-              data-toggle="tooltip" data-placement="top" title="Services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"
-              href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/contact.html"
-              data-toggle="tooltip" data-placement="top" title="Contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- Page Header -->
-  <header class="masthead">
-   <!-- Page Header -->
-  <br>
-
-  <div class="row" style="margin-top: 50px;">
-    <div class="col-lg-8 col-md-10 mx-auto">
-      <div class="site-heading">
-        <br>
-        <br>
-        <br>
-        <center>
-          <h1 class="display-3">Coding Thunder</h1>
-          <span class="subheading display-5">This Website Is Created by Abhishek Kumar</span>
-        </center>
-        <center>
-          <h5 class="jumbotron-heading text-dark" style="font-size: 30px;"><span id="typed"
-              style="font-size: 30px;"></span></h5>
-        </center><br>
-      </div>
-    </div>
-  </div>
-  </div>
+  <!-- Header -->
+  <header id="header" class="alt">
+    <h1 style="font-size: 1.2rem;"><a href="index.html">CodingThunder</a></h1>
+    <a href="#nav">Menu</a>
   </header>
-  <center><span>
-    <a href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/index.html" class="btn" id="a_btn"
-      style="color: #16c9f6; border: 2px solid #16c9f6; padding-top: 10px; padding-bottom: 10px; font-size: 1.1rem; letter-spacing: 2px; margin-left: 5px; margin-right: 5px; display: flexbox;outline: none; text-emphasis: none; text-decoration: none;">Hompage</a>
-    <a href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/index.html" class="btn" id="a_btn"
-      style="color: #4CAF50; border: 2px solid #4CAF50; padding-top: 10px; padding-bottom: 10px; font-size: 1.1rem; letter-spacing: 2px; margin-left: 5px; margin-right: 5px; display: flexbox;outline: none; text-emphasis: none; text-decoration: none;">Web
-      Development Tutorial</a>
-    <a href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/contact.html" class="btn" id="a_btn"
-      style="color: #906DF7; border: 2px solid #906DF7; padding-top: 10px; padding-bottom: 10px; font-size: 1.1rem; letter-spacing: 2px; margin-left: 5px; margin-right: 5px; display: flexbox;outline: none; text-emphasis: none; text-decoration: none;">Contact
-      Me</a>
-  </span></center>
-  <hr>
-  <br>
+
+  <!-- Nav -->
+  <nav id="nav">
+    <ul class="links">
+      <li><a href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/index.html">Home</a></li>
+      <li><a href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/about.html">About</a></li>
+      <li><a
+          href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/Services.html">Services</a>
+      </li>
+      <li><a href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Banner -->
+  <section id="banner">
+    <i class="icon fa-diamond"></i>
+    <h2>Coding Thunder</h2>
+    <p>This Website Is Created By Abhishek Kumar</p>
+    <center>
+      <h5 class="jumbotron-heading text-light" style="font-size: 30px;"><span id="typed"
+          style="font-size: 30px;"></span>
+      </h5>
+    </center><br>
+    <ul class="actions">
+      <li><a href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/about.html"
+          class="button big special">About Me</a></li>
+      <li><a href="https://abhishekkumar-webdevelopment.github.io/CodingThunderWebDevelopment/contact.html"
+          class="button big special">Contact Me</a></li>
+    </ul>
+  </section>
   </header>
   <div class="container">
     <h1 class="text-center" style="font-family: 'Poppins', sans-serif;">Learning Material</h1>
@@ -180,277 +197,293 @@
   <hr>
   <br>
   <!-- Main Content -->
-<div class="container">
-        <h2>CSS Borders</h2>
-        <br>
-        <br>
-        <hr>
-        <h1>CSS Border Properties</h1>
-        <p>The CSS border properties Allows You To Set The Border Around The Element</p>
-        <hr>
-        <h1>Border Style</h1>
-        <p>The border-style property allows what kind of border to display.</p>
-        <p>The Following Value</p>
-        <ul>
-            <li>dotted - Defines a dotted border</li>
-            <li>dashed - Defines a dashed border</li>
-            <li>solid - Defines a solid border</li>
-            <li>double - Defines a double border</li>
-            <li>groove - Defines a 3D grooved border. The effect </li>
-            <li>ridge - Defines a 3D ridged border. It depends on the border-color value</li>
-            <li>inset - Defines a 3D inset border. It  depends on the border-color value</li>
-            <li>outset - Defines a 3D outset border. It depends on the border-color value</li>
-            <li>none - Defines no border</li>
-            <li>hidden - Defines a hidden border</li>
-        </ul>
-        <hr>
-        <h1>Border Width</h1>
-        <p>The border-width property allows you to set the width of border around a element</p>
-        <p>The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined
-            values: thin, medium, or thick.</p>
-        <p>The border-width property can have from one to four values (for the top border, right border, bottom border,
-            and the left border).</p>
-        <hr>
-        <h1>Border Color</h1>
-        <p>The border-color property is used to set the color of the four borders.</p>
-        <p>The color can be set by:</p>
-        <ul>
-            <li>name - specify a color name, like "red"</li>
-            <li>Hex - specify a hex value, like "#ff0000"</li>
-            <li>RGB - specify a RGB value, like "rgb(255,0,0)"</li>
-            <li>transparent</li>
-        </ul>
-        <p>The border-color property can have from one to four values (for the top border, right border, bottom border,
-            and the left border). </p>
-        <p>If border-color is not set, it inherits the color of the element.</p>
-        <hr>
-        <h1>Border - Individual Sides</h1>
-        <p>In CSS, there is also properties for specify the borders (top, right, bottom, and left):</p>
-        <p>The example above gives the same result as this:</p>
-        <p>If the border-style property has four values:</p>
-        <ul>
-            <li>border-style: dotted solid double dashed; </li>
-            <ul>
-                <li>top border is dotted</li>
-                <li>right border is solid</li>
-                <li>bottom border is double</li>
-                <li>left border is dashed</li>
-            </ul>
-        </ul>
-        <p>If the border-style property has three values:</p>
-        <ul>
-            <li>border-style: dotted solid double;</li>
-            <ul>
-                <li>top border is dotted</li>
-                <li>right and left borders are solid</li>
-                <li>bottom border is double</li>
-            </ul>
-        </ul>
-        <p>If the border-style property has two values:</p>
-        <ul>
-            <li>border-style: dotted solid; </li>
-            <ul>
-                <li>top and bottom borders are dotted</li>
-                <li>right and left borders are solid</li>
-            </ul>
-        </ul>
-        <p>If the border-style property has one value:</p>
-        <ul>
-            <li>border-style: dotted;</li>
-            <ul>
-                <li>all four borders are dotted</li>
-            </ul>
-        </ul>
-        <p>The border-style property is used in the example above. However, it also works with border-width and
-            border-color.</p>
-        <hr>
-        <h1>Border - Shorthand Property</h1>
-        <p>The Border Shorthad property allows you to specfify the property in a single line.</p>
+  <div class="container">
+    <h2>CSS Borders</h2>
+    <br>
+    <br>
+    <hr>
+    <h1>CSS Border Properties</h1>
+    <p>The CSS border properties Allows You To Set The Border Around The Element</p>
+    <hr>
+    <h1>Border Style</h1>
+    <p>The border-style property allows what kind of border to display.</p>
+    <p>The Following Value</p>
+    <ul>
+      <li>dotted - Defines a dotted border</li>
+      <li>dashed - Defines a dashed border</li>
+      <li>solid - Defines a solid border</li>
+      <li>double - Defines a double border</li>
+      <li>groove - Defines a 3D grooved border. The effect </li>
+      <li>ridge - Defines a 3D ridged border. It depends on the border-color value</li>
+      <li>inset - Defines a 3D inset border. It depends on the border-color value</li>
+      <li>outset - Defines a 3D outset border. It depends on the border-color value</li>
+      <li>none - Defines no border</li>
+      <li>hidden - Defines a hidden border</li>
+    </ul>
+    <hr>
+    <h1>Border Width</h1>
+    <p>The border-width property allows you to set the width of border around a element</p>
+    <p>The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined
+      values: thin, medium, or thick.</p>
+    <p>The border-width property can have from one to four values (for the top border, right border, bottom border,
+      and the left border).</p>
+    <hr>
+    <h1>Border Color</h1>
+    <p>The border-color property is used to set the color of the four borders.</p>
+    <p>The color can be set by:</p>
+    <ul>
+      <li>name - specify a color name, like "red"</li>
+      <li>Hex - specify a hex value, like "#ff0000"</li>
+      <li>RGB - specify a RGB value, like "rgb(255,0,0)"</li>
+      <li>transparent</li>
+    </ul>
+    <p>The border-color property can have from one to four values (for the top border, right border, bottom border,
+      and the left border). </p>
+    <p>If border-color is not set, it inherits the color of the element.</p>
+    <hr>
+    <h1>Border - Individual Sides</h1>
+    <p>In CSS, there is also properties for specify the borders (top, right, bottom, and left):</p>
+    <p>The example above gives the same result as this:</p>
+    <p>If the border-style property has four values:</p>
+    <ul>
+      <li>border-style: dotted solid double dashed; </li>
+      <ul>
+        <li>top border is dotted</li>
+        <li>right border is solid</li>
+        <li>bottom border is double</li>
+        <li>left border is dashed</li>
+      </ul>
+    </ul>
+    <p>If the border-style property has three values:</p>
+    <ul>
+      <li>border-style: dotted solid double;</li>
+      <ul>
+        <li>top border is dotted</li>
+        <li>right and left borders are solid</li>
+        <li>bottom border is double</li>
+      </ul>
+    </ul>
+    <p>If the border-style property has two values:</p>
+    <ul>
+      <li>border-style: dotted solid; </li>
+      <ul>
+        <li>top and bottom borders are dotted</li>
+        <li>right and left borders are solid</li>
+      </ul>
+    </ul>
+    <p>If the border-style property has one value:</p>
+    <ul>
+      <li>border-style: dotted;</li>
+      <ul>
+        <li>all four borders are dotted</li>
+      </ul>
+    </ul>
+    <p>The border-style property is used in the example above. However, it also works with border-width and
+      border-color.</p>
+    <hr>
+    <h1>Border - Shorthand Property</h1>
+    <p>The Border Shorthad property allows you to specfify the property in a single line.</p>
     <p>Example <code>h1{
         border:width-of-border style-of-border color;
         }</code></p>
-        <hr>
-        <h1>All CSS Border Properties</h1>
-        <table class="table table-responsive table-bordered table-striped table-hover">
-            <tr>
-                <td>Property</td>
-                <td>Description</td>
-            </tr>
-            <tr>
-                <td>border</td>
-                <td>It Sets border properties in one declaration</td>
-            </tr>
+    <hr>
+    <h1>All CSS Border Properties</h1>
+    <table class="table table-responsive table-bordered table-striped table-hover">
+      <tr>
+        <td>Property</td>
+        <td>Description</td>
+      </tr>
+      <tr>
+        <td>border</td>
+        <td>It Sets border properties in one declaration</td>
+      </tr>
 
-            <tr>
-                <td>border-buttom</td>
-                <td>Sets bottom border properties in buttom of the element</td>
-            </tr>
+      <tr>
+        <td>border-buttom</td>
+        <td>Sets bottom border properties in buttom of the element</td>
+      </tr>
 
-            <tr>
-                <td>border-buttom-color</td>
-                <td>Sets the color of the bottom border</td>
-            </tr>
+      <tr>
+        <td>border-buttom-color</td>
+        <td>Sets the color of the bottom border</td>
+      </tr>
 
-            <tr>
-                <td>border-bottom-style
-                </td>
-                <td>Sets the style of the bottom border</td>
-            </tr>
+      <tr>
+        <td>border-bottom-style
+        </td>
+        <td>Sets the style of the bottom border</td>
+      </tr>
 
-            <tr>
-                <td>border-bottom-width</td>
-                <td>Sets the width of the bottom border</td>
-            </tr>
+      <tr>
+        <td>border-bottom-width</td>
+        <td>Sets the width of the bottom border</td>
+      </tr>
 
-            <tr>
-                <td>border-color
-                </td>
-                <td>Sets the color of borders</td>
-            </tr>
+      <tr>
+        <td>border-color
+        </td>
+        <td>Sets the color of borders</td>
+      </tr>
 
-            <tr>
-                <td>border-left</td>
-                <td>Sets the left border properties</td>
-            </tr>
+      <tr>
+        <td>border-left</td>
+        <td>Sets the left border properties</td>
+      </tr>
 
-            <tr>
-                <td>border-left-color</td>
-                <td>color
-                    Sets the color of the left border</td>
-            </tr>
+      <tr>
+        <td>border-left-color</td>
+        <td>color
+          Sets the color of the left border</td>
+      </tr>
 
-            <tr>
-                <td>border-left-style
-                </td>
-                <td>Sets the style of the left border</td>
-            </tr>
-            <tr>
-                <td>border-right-color
-                </td>
-                <td>
-                    Sets the color of the right border</td>
-            </tr>
-            <tr>
-                <td>border-right-style
-                </td>
-                <td>Sets the style of the right border</td>
-            </tr>
-            <tr>
-                <td>border-right-width
+      <tr>
+        <td>border-left-style
+        </td>
+        <td>Sets the style of the left border</td>
+      </tr>
+      <tr>
+        <td>border-right-color
+        </td>
+        <td>
+          Sets the color of the right border</td>
+      </tr>
+      <tr>
+        <td>border-right-style
+        </td>
+        <td>Sets the style of the right border</td>
+      </tr>
+      <tr>
+        <td>border-right-width
 
-                </td>
-                <td>Sets the width of the right border</td>
-            </tr>
-            <tr>
-                <td>border-right
-                </td>
-                <td>Sets the style of the four borders</td>
-            </tr>
-            <tr>
-                <td>border-style
-                </td>
-                <td>Sets the color of the top border</td>
-            </tr>
-            <tr>
-                <td>border-top
-                </td>
-                <td>Sets the style of the top border</td>
-            </tr>
-            <tr>
-                <td>border-top-color
-                </td>
-                <td>Sets the color of the top border</td>
-            </tr>
-            <tr>
-                <td>border-top-style
-                </td>
-                <td>Sets the style of the top border</td>
-            </tr>
-            <tr>
-                <td>border-top-width
-                </td>
-                <td>Sets the width of the top border</td>
-            </tr>
-            <tr>
-                <td>border-width
-                </td>
-                <td>Sets the width of four borders</td>
-            </tr>
+        </td>
+        <td>Sets the width of the right border</td>
+      </tr>
+      <tr>
+        <td>border-right
+        </td>
+        <td>Sets the style of the four borders</td>
+      </tr>
+      <tr>
+        <td>border-style
+        </td>
+        <td>Sets the color of the top border</td>
+      </tr>
+      <tr>
+        <td>border-top
+        </td>
+        <td>Sets the style of the top border</td>
+      </tr>
+      <tr>
+        <td>border-top-color
+        </td>
+        <td>Sets the color of the top border</td>
+      </tr>
+      <tr>
+        <td>border-top-style
+        </td>
+        <td>Sets the style of the top border</td>
+      </tr>
+      <tr>
+        <td>border-top-width
+        </td>
+        <td>Sets the width of the top border</td>
+      </tr>
+      <tr>
+        <td>border-width
+        </td>
+        <td>Sets the width of four borders</td>
+      </tr>
 
-        </table>
+    </table>
+  </div>
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="inner">
+      <ul class="copyright">
+        <li>&copy; CodingThunder</li>
+        <li>Images: <a href="http://unsplash.com">Unsplash</a>.</li>
+        <li>Design: <a href="http://templated.co">TEMPLATED</a>.</li>
+        <li><a href="Pages/PrivacyPolicy.html" style="text-decoration: none; font-size: 1.2rem; color: #fff;"
+            data-toggle="tooltip" data-placement="top" title="Privacy Policy">Privacy Policy</a></li>
+        <li><a href="Pages/Disclamer.html" style="text-decoration: none; font-size: 1.2rem; color: #fff;"
+            data-toggle="tooltip" data-placement="top" title="Disclamer">DISCLAMER</a></li>
+      </ul>
     </div>
-       <!-- Footer -->
-       <footer>
-        <br><br>
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <center>
-              <p class="copyright text-muted">Copyright &copy; Coding Thunder 2020</p>
-            </center>
-          </div>
-        </div>
-    </div>
-    <br>
-    <div class="container text-center">
-      <a href="#Abhishek" class="btn px-5 rounded-pill shadow-sm backtotop" onclick="topFunction()" id="myBtn" style="background-color: rgb(85, 22, 221); color: white; padding-top: 22px;
-    padding-bottom: 22px; font-size: 20px;" title="Back To Top">Back to
-        Top</a>
-    </div>
-    <br>
-    <br>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/433888fe69.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
-  
-  </body>
-  <script>
-    window.addEventListener('load', function () {
-      const loader = document.querySelector(".loader");
-      loader.className += ' hidden';
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/skel.min.js"></script>
+  <script src="static/js/util.js"></script>
+  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+  <script src="static/js/main.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/433888fe69.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+</body>
+<script>
+  window.addEventListener('load', function () {
+    const loader = document.querySelector(".loader");
+    loader.className += ' hidden';
+  });
+</script>
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+<script>
+
+  var myVar;
+
+  function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+  }
+
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+
+  mybutton = document.getElementById("myBtn");
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "inline";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  window.onload = function () {
+    console.log("loaded")
+    var typed = new Typed('#typed', {
+      strings: ["Hello I Am Abhishek Kumar", "Welcome to CodingThunder", "Learn To Make Awesome Websites", "Learn Web development", "Learn To Make Responsive Websites", "Learn Python Web Development", "and other awesome Web Development concepts with Abhishek Kumar :)"],
+      backSpeed: 15,
+      smartBackspace: true,
+      backDelay: 1200,
+      startDelay: 1000,
+      typeSpeed: 25,
+      loop: true,
     });
-  </script>
-  <script>
-    mybutton = document.getElementById("myBtn");
-    window.onscroll = function () { scrollFunction() };
-  
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "inline";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-  
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  
-    window.onload = function () {
-      console.log("loaded")
-      var typed = new Typed('#typed', {
-        strings: ["Hello I Am Abhishek Kumar", "Welcome to CodingThunder", "Learn To Make Awesome Websites", "Learn Web development", "Learn To Make Responsive Websites", "Learn Python Web Development", "and other awesome Web Development concepts with Abhishek Kumar :)"],
-        backSpeed: 15,
-        smartBackspace: true,
-        backDelay: 1200,
-        startDelay: 1000,
-        typeSpeed: 25,
-        loop: true,
-      });
-    };
-  </script>
-  
-  </html>
+  };
+</script>
+
+</html>
